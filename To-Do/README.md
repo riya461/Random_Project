@@ -1,0 +1,5 @@
+## Stacks 
+
+- NextJs
+- Tailwindcss
+- MongoDB

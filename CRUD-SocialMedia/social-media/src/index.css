@@ -1,0 +1,80 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.bg-cover-custom {
+  background-size: cover;
+  background-position: center;
+}
+
+
+.sun-moon {
+  position: relative;
+  width: 100px;
+  height: 56px;
+  padding: 5px;
+  border-radius: 45px;
+  /* border: rgb(231, 82, 60) 3px solid; */
+  background-color: rgba(255, 166, 0, 0.658);
+  overflow: hidden;
+  transition: all 1s cubic-bezier(0.6, -0.28, 0.735, 0.045);     
+}
+
+.circle {
+  border-radius: 50%;
+  display: inline-block;
+  position: absolute;
+}
+
+.small {
+  left: 60px;
+  top: 50px;
+  width: 30px;
+  height: 30px;
+ 
+  transition: all 1s cubic-bezier(0.6, -0.28, 0.735, 0.045);
+}
+
+.large {
+  left: 50px;
+  background: yellow;
+  width: 40px;
+  height: 40px;
+  border: 3px solid orange;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: all 1s cubic-bezier(0.6, -0.28, 0.735, 0.045);
+}
+
+.sun-moon input {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  margin: 0;
+  opacity: 0;
+  z-index: 1;
+  cursor: pointer;
+}
+
+/* //Change the background color */
+.move {
+  border: 3px solid #1a237e;
+  background-color: #3f51b5;
+   
+}
+
+/* //Move the bigger circle */
+.move .large {
+  left: 7px;
+  border-color: #fff;
+  
+}
+
+/* //Move the smaller circle */
+.move .small {
+  background: #3f51b5;
+  left: 20px;
+  top: 3px;
+}
